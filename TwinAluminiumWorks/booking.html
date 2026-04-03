@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book an appointment with Twin Aluminium Works for consultation and services"
+    />
+    <title>Book Appointment | Twin Aluminium Works</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <img
+              src="images/favicon.png"
+              alt="Logo"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="logo-text">
+            <h1>Twin Aluminium Works</h1>
+            <span>Premium Quality Since 2020</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li>
+            <a href="products-services.html" class="nav-link"
+              >Products & Services</a
+            >
+          </li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="get-in-touch.html" class="nav-link">Get In Touch</a></li>
+          <li>
+            <a href="booking.html" class="nav-link btn-quote active"
+              >Book Now</a
+            >
+          </li>
+        </ul>
+
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <h1 class="page-title-animate">Book an Appointment</h1>
+      <p>Schedule a consultation with our experts for your aluminium project</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="booking.html">Book Appointment</a>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking-section">
+      <div class="container">
+        <div class="booking-container animate-on-scroll">
+          <div class="booking-header">
+            <h2><i class="fas fa-calendar-check"></i> Appointment Booking</h2>
+            <p>Fill in the details below to schedule your appointment</p>
+          </div>
+
+          <form id="bookingForm" class="booking-form">
+            <!-- Progress Steps -->
+            <div class="booking-steps">
+              <div class="step active">
+                <div class="step-number">1</div>
+                <div class="step-label">Select Service</div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-label">Date & Time</div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-label">Your Details</div>
+              </div>
+            </div>
+
+            <!-- Step 1: Service Selection -->
+            <div class="booking-form-content active">
+              <h3
+                style="
+                  margin-bottom: 1rem;
+                  color: var(--primary-color);
+                  font-size: 1.2rem;
+                "
+              >
+                Select Service
+              </h3>
+              <div class="form-group">
+                <label for="service">Service Type *</label>
+                <select id="service" class="form-control" required>
+                  <option value="">-- Choose a Service --</option>
+                  <option value="Aluminium Windows">Aluminium Windows</option>
+                  <option value="Aluminium Doors">Aluminium Doors</option>
+                  <option value="Sliding Doors">Sliding Doors</option>
+                  <option value="Folding Doors">Folding Doors</option>
+                  <option value="Security Doors">Security Doors</option>
+                  <option value="Custom Fabrication">Custom Fabrication</option>
+                  <option value="Installation">Installation Service</option>
+                  <option value="Repairs">Repairs & Maintenance</option>
+                  <option value="Commercial Project">Commercial Project</option>
+                  <option value="Glasswork">Glasswork Services</option>
+                  <option value="Consultation">General Consultation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="serviceDetails">Service Details</label>
+                <textarea
+                  id="serviceDetails"
+                  class="form-control"
+                  placeholder="Describe your requirements..."
+                  style="min-height: 80px"
+                ></textarea>
+              </div>
+              <div class="text-right mt-3">
+                <button type="button" id="nextStep" class="btn btn-primary">
+                  Next <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Date & Time -->
+            <div class="booking-form-content">
+              <h3
+                style="
+                  margin-bottom: 1rem;
+                  color: var(--primary-color);
+                  font-size: 1.2rem;
+                "
+              >
+                Select Date & Time
+              </h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="bookingDate">Preferred Date *</label>
+                  <input
+                    type="date"
+                    id="bookingDate"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="bookingTime">Preferred Time *</label>
+                  <select id="bookingTime" class="form-control" required>
+                    <option value="">-- Choose Time --</option>
+                    <option value="08:00">8:00 AM</option>
+                    <option value="09:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="bookingNotes">Additional Notes</label>
+                <textarea
+                  id="bookingNotes"
+                  class="form-control"
+                  placeholder="Any special requirements or instructions..."
+                  style="min-height: 80px"
+                ></textarea>
+              </div>
+              <div
+                class="text-right mt-3"
+                style="display: flex; gap: 0.8rem; justify-content: flex-end"
+              >
+                <button type="button" id="prevStep" class="btn btn-secondary">
+                  <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button type="button" id="nextStep2" class="btn btn-primary">
+                  Next <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Contact Details -->
+            <div class="booking-form-content">
+              <h3
+                style="
+                  margin-bottom: 1rem;
+                  color: var(--primary-color);
+                  font-size: 1.2rem;
+                "
+              >
+                Your Contact Details
+              </h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientName">Full Name *</label>
+                  <input
+                    type="text"
+                    id="clientName"
+                    class="form-control"
+                    placeholder="Your Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="clientEmail">Email Address *</label>
+                  <input
+                    type="email"
+                    id="clientEmail"
+                    class="form-control"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientPhone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="clientPhone"
+                    class="form-control"
+                    placeholder="+254 XXX XXX XXX"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="clientAddress">Location/Address</label>
+                  <input
+                    type="text"
+                    id="clientAddress"
+                    class="form-control"
+                    placeholder="Your Location"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input
+                    type="checkbox"
+                    id="termsAccept"
+                    style="margin-right: 0.5rem"
+                  />
+                  I agree to the terms and conditions *
+                </label>
+              </div>
+              <div
+                class="text-right mt-3"
+                style="display: flex; gap: 0.8rem; justify-content: flex-end"
+              >
+                <button type="button" id="prevStep2" class="btn btn-secondary">
+                  <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button type="submit" id="submitBooking" class="btn btn-gold">
+                  <i class="fas fa-check"></i> Submit Booking
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Info -->
+    <section
+      class="section"
+      style="background: var(--light-bg); padding: 3rem 2rem"
+    >
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>What to Expect</h2>
+          <p>Here's what happens after you book an appointment</p>
+        </div>
+        <div class="why-choose-grid">
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon"><i class="fas fa-envelope"></i></div>
+            <h3>Confirmation</h3>
+            <p>
+              You'll receive a confirmation email/SMS with your appointment
+              details.
+            </p>
+          </div>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon"><i class="fas fa-user-clock"></i></div>
+            <h3>Reminder</h3>
+            <p>
+              We'll send you a reminder 24 hours before your scheduled
+              appointment.
+            </p>
+          </div>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Consultation</h3>
+            <p>
+              Our expert will assess your needs and provide recommendations.
+            </p>
+          </div>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon"><i class="fas fa-file-invoice"></i></div>
+            <h3>Quotation</h3>
+            <p>
+              Receive a detailed quotation for your project within 48 hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Twin Aluminium Works</h3>
+          <p>
+            Premium aluminium windows, doors, and fabrication services. Quality
+            craftsmanship that stands the test of time.
+          </p>
+          <div class="footer-social">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products-services.html">Products & Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get-in-touch.html">Get In Touch</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="products-services.html">Aluminium Windows</a></li>
+            <li><a href="products-services.html">Aluminium Doors</a></li>
+            <li>
+              <a href="products-services.html">Glass Shower Enclosures</a>
+            </li>
+            <li><a href="products-services.html">Glass Partitions</a></li>
+            <li><a href="products-services.html">Glass Railings</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>Thika Road, Nairobi, Kenya</span>
+            </li>
+            <li><i class="fas fa-phone"></i><span>+254 700 470 467</span></li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><span>conradalumasi90@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i
+              ><span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Twin Aluminium Works. All Rights Reserved.</p>
+        <p>
+          Designed with
+          <i class="fas fa-heart" style="color: var(--gold)"></i> in Kenya
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Details</h3>
+          <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.querySelector('.modal').classList.remove('active')
+            "
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var dateInput = document.getElementById("bookingDate");
+        if (dateInput) {
+          var today = new Date().toISOString().split("T")[0];
+          dateInput.setAttribute("min", today);
+        }
+      });
+    </script>
+  </body>
+</html>

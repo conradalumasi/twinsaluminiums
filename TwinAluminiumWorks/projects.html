@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View our portfolio of completed aluminium projects across Kenya"
+    />
+    <title>Projects | Twin Aluminium Works</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Projects Filter Buttons - Fully Visible */
+      .projects-filter {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .filter-btn {
+        padding: 0.8rem 2rem;
+        background: white;
+        border: 2px solid #d4af37;
+        color: #2c3e50;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .filter-btn:hover {
+        background: #d4af37;
+        border-color: #d4af37;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+      }
+
+      .filter-btn.active {
+        background: #d4af37;
+        border-color: #d4af37;
+        color: white;
+        box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+      }
+
+      .filter-btn.active:hover {
+        background: #c4a000;
+        transform: translateY(-2px);
+      }
+
+      /* Responsive filter buttons */
+      @media (max-width: 768px) {
+        .projects-filter {
+          gap: 0.8rem;
+        }
+        .filter-btn {
+          padding: 0.6rem 1.4rem;
+          font-size: 0.85rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .projects-filter {
+          gap: 0.6rem;
+        }
+        .filter-btn {
+          padding: 0.5rem 1.2rem;
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <img
+              src="images/favicon.png"
+              alt="Logo"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="logo-text">
+            <h1>Twin Aluminium Works</h1>
+            <span>Premium Quality Since 2020</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li>
+            <a href="products-services.html" class="nav-link"
+              >Products & Services</a
+            >
+          </li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="get-in-touch.html" class="nav-link">Get In Touch</a></li>
+          <li>
+            <a href="booking.html" class="nav-link btn-quote">Book Now</a>
+          </li>
+        </ul>
+
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <h1 class="page-title-animate">Our Projects</h1>
+      <p>
+        Explore our portfolio of completed aluminium installations across Kenya
+      </p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="projects.html">Projects</a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Project Portfolio</h2>
+          <p>
+            From residential homes to commercial complexes, we've delivered
+            excellence
+          </p>
+        </div>
+
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="residential">
+            Residential
+          </button>
+          <button class="filter-btn" data-filter="commercial">
+            Commercial
+          </button>
+          <button class="filter-btn" data-filter="industrial">
+            Industrial
+          </button>
+        </div>
+
+        <div class="projects-grid">
+          <div
+            class="project-card animate-on-scroll"
+            data-category="residential"
+          >
+            <img src="images/project-1.jpg" alt="Luxury Home Karen" />
+            <div class="project-overlay">
+              <h3>Luxury Home - Karen</h3>
+              <p>Complete window and door installation</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="commercial"
+          >
+            <img src="images/project-2.jpg" alt="Office Complex Westlands" />
+            <div class="project-overlay">
+              <h3>Office Complex - Westlands</h3>
+              <p>Commercial storefront and partitions</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="residential"
+          >
+            <img src="images/project-3.jpg" alt="Modern Apartment Kilimani" />
+            <div class="project-overlay">
+              <h3>Modern Apartment - Kilimani</h3>
+              <p>Sliding doors and balcony enclosures</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="residential"
+          >
+            <img src="images/project-4.jpg" alt="Villa Runda" />
+            <div class="project-overlay">
+              <h3>Villa - Runda</h3>
+              <p>Custom aluminium windows and security doors</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="commercial"
+          >
+            <img src="images/project-5.jpg" alt="Shopping Mall" />
+            <div class="project-overlay">
+              <h3>Shopping Mall - Thika</h3>
+              <p>Storefronts and entrance systems</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="industrial"
+          >
+            <img src="images/project-6.jpg" alt="Warehouse" />
+            <div class="project-overlay">
+              <h3>Warehouse - Industrial Area</h3>
+              <p>Industrial doors and ventilation systems</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="residential"
+          >
+            <img src="images/project-7.jpg" alt="Townhouse" />
+            <div class="project-overlay">
+              <h3>Townhouse - Lavington</h3>
+              <p>Full aluminium glazing solution</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="commercial"
+          >
+            <img src="images/project-8.jpg" alt="Hotel" />
+            <div class="project-overlay">
+              <h3>Hotel - Mombasa</h3>
+              <p>Room windows and balcony doors</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="residential"
+          >
+            <img src="images/project-9.jpg" alt="Penthouse" />
+            <div class="project-overlay">
+              <h3>Penthouse - Upper Hill</h3>
+              <p>Premium folding doors and windows</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="commercial"
+          >
+            <img src="images/project-10.jpg" alt="Bank Building" />
+            <div class="project-overlay">
+              <h3>Bank Building - CBD</h3>
+              <p>Security doors and teller windows</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="industrial"
+          >
+            <img src="images/project-11.jpg" alt="Factory" />
+            <div class="project-overlay">
+              <h3>Factory - Athi River</h3>
+              <p>Industrial roller doors and windows</p>
+            </div>
+          </div>
+          <div
+            class="project-card animate-on-scroll"
+            data-category="residential"
+          >
+            <img src="images/project-12.jpg" alt="Gated Community" />
+            <div class="project-overlay">
+              <h3>Gated Community - Syokimau</h3>
+              <p>Multiple home installations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section
+      class="section"
+      style="background: var(--light-bg); padding: 3rem 2rem"
+    >
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Our Impact</h2>
+          <p>Numbers that speak to our commitment and expertise</p>
+        </div>
+        <div class="hero-stats" style="max-width: 1000px; margin: 0 auto">
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number">300+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Commercial Projects</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="section"
+      style="
+        background: var(--gradient-primary);
+        color: white;
+        text-align: center;
+        padding: 3rem 2rem;
+      "
+    >
+      <div class="container">
+        <h2 style="color: white; margin-bottom: 0.8rem; font-size: 1.5rem">
+          Want to See More?
+        </h2>
+        <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem">
+          Visit our showroom or schedule a consultation to discuss your project
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a href="booking.html" class="btn btn-gold"
+            ><i class="fas fa-calendar-check"></i> Book Consultation</a
+          >
+          <a href="get-in-touch.html" class="btn btn-secondary"
+            ><i class="fas fa-map-marker-alt"></i> Visit Showroom</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Twin Aluminium Works</h3>
+          <p>
+            Premium aluminium windows, doors, and fabrication services. Quality
+            craftsmanship that stands the test of time.
+          </p>
+          <div class="footer-social">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products-services.html">Products & Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get-in-touch.html">Get In Touch</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="products-services.html">Aluminium Windows</a></li>
+            <li><a href="products-services.html">Aluminium Doors</a></li>
+            <li>
+              <a href="products-services.html">Glass Shower Enclosures</a>
+            </li>
+            <li><a href="products-services.html">Glass Partitions</a></li>
+            <li><a href="products-services.html">Glass Railings</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>Thika Road, Nairobi, Kenya</span>
+            </li>
+            <li><i class="fas fa-phone"></i><span>+254 700 470 467</span></li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><span>conradalumasi90@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i
+              ><span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Twin Aluminium Works. All Rights Reserved.</p>
+        <p>
+          Designed with
+          <i class="fas fa-heart" style="color: var(--gold)"></i> in Kenya
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Details</h3>
+          <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.querySelector('.modal').classList.remove('active')
+            "
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

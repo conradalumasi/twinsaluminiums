@@ -1,0 +1,15 @@
+{
+  "name": "twin-aluminium-works",
+  "version": "1.0.0",
+  "scripts": {
+    "minify-css": "cleancss -o css/style.min.css css/style.css",
+    "minify-js": "terser js/main.js -o js/main.min.js -c -m",
+    "minify-html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true -o index.html index.html",
+    "build": "npm run minify-css && npm run minify-js"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.0",
+    "terser": "^5.24.0",
+    "html-minifier": "^4.0.0"
+  }
+}

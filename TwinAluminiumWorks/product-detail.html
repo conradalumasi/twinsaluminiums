@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product Details - Twin Aluminium Works" />
+    <title>Product Details | Twin Aluminium Works</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <img
+              src="images/favicon.png"
+              alt="Logo"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="logo-text">
+            <h1>Twin Aluminium Works</h1>
+            <span>Premium Quality Since 2020</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li>
+            <a href="products-services.html" class="nav-link"
+              >Products & Services</a
+            >
+          </li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="get-in-touch.html" class="nav-link">Get In Touch</a></li>
+          <li>
+            <a href="booking.html" class="nav-link btn-quote">Book Now</a>
+          </li>
+        </ul>
+
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+      <div class="container">
+        <div class="breadcrumb" style="margin-bottom: 1.5rem">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="products-services.html">Products & Services</a>
+          <span>/</span>
+          <a href="#" id="currentProduct">Product Details</a>
+        </div>
+
+        <div class="product-detail-container animate-on-scroll">
+          <div class="product-detail-images">
+            <div class="product-detail-main-image">
+              <img
+                src="images/product-sliding-window.jpg"
+                alt="Product Image"
+                id="mainProductImage"
+              />
+            </div>
+            <div class="product-detail-thumbnails">
+              <img
+                src="images/product-sliding-window.jpg"
+                alt="Thumbnail 1"
+                class="active"
+                onclick="changeImage(this)"
+              />
+            </div>
+          </div>
+
+          <div class="product-detail-info">
+            <span class="product-detail-category" id="productCategory"
+              >Windows</span
+            >
+            <h1 id="productTitle">Sliding Windows</h1>
+            <div class="product-detail-price" id="productPrice">
+              From KSh 15,000
+            </div>
+
+            <p class="product-detail-description" id="productDescription">
+              Our premium sliding windows offer smooth operation with excellent
+              weather sealing. Perfect for modern homes and offices, these
+              windows combine functionality with elegant design.
+            </p>
+
+            <div class="product-detail-features">
+              <h3>Key Features</h3>
+              <ul id="productFeatures">
+                <li>Smooth sliding mechanism</li>
+                <li>Weather-resistant sealing</li>
+                <li>Durable aluminium frames</li>
+                <li>Easy to clean and maintain</li>
+                <li>Energy efficient design</li>
+                <li>Multiple finish options</li>
+              </ul>
+            </div>
+
+            <div class="product-detail-specs">
+              <h3>Specifications</h3>
+              <div class="spec-row">
+                <span class="spec-label">Material</span>
+                <span class="spec-value" id="specMaterial"
+                  >Premium Aluminium</span
+                >
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Finish</span>
+                <span class="spec-value" id="specFinish"
+                  >Powder Coated / Anodized</span
+                >
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Glass Type</span>
+                <span class="spec-value" id="specGlass"
+                  >Tempered / Laminated</span
+                >
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Warranty</span>
+                <span class="spec-value" id="specWarranty">5 Years</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Delivery</span>
+                <span class="spec-value" id="specDelivery">7-14 Days</span>
+              </div>
+            </div>
+
+            <div class="product-detail-actions">
+              <a href="booking.html" class="btn btn-primary">
+                <i class="fas fa-calendar-check"></i> Book Installation
+              </a>
+              <a
+                href="get-in-touch.html"
+                class="btn btn-secondary"
+                style="
+                  border-color: var(--primary-color);
+                  color: var(--primary-color);
+                "
+              >
+                <i class="fas fa-envelope"></i> Request Quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="section products-section" style="padding: 3rem 2rem">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Related Products</h2>
+          <p>You might also be interested in these products</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-card animate-on-scroll">
+            <div class="product-image">
+              <img
+                src="images/product-casement-window.jpg"
+                alt="Casement Window"
+              />
+              <div class="product-overlay">
+                <a
+                  href="product-detail.html?id=casement-window"
+                  class="btn btn-gold"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Casement Windows</h3>
+              <p>Classic design with superior ventilation</p>
+              <span class="product-price">From KSh 12,000</span>
+            </div>
+          </div>
+          <div class="product-card animate-on-scroll">
+            <div class="product-image">
+              <img src="images/product-sliding-door.jpg" alt="Sliding Door" />
+              <div class="product-overlay">
+                <a
+                  href="product-detail.html?id=sliding-door"
+                  class="btn btn-gold"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Sliding Doors</h3>
+              <p>Space-saving elegance for modern homes</p>
+              <span class="product-price">From KSh 45,000</span>
+            </div>
+          </div>
+          <div class="product-card animate-on-scroll">
+            <div class="product-image">
+              <img src="images/product-folding-door.jpg" alt="Folding Door" />
+              <div class="product-overlay">
+                <a
+                  href="product-detail.html?id=folding-door"
+                  class="btn btn-gold"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Folding Doors</h3>
+              <p>Maximum opening for seamless living</p>
+              <span class="product-price">From KSh 65,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="section"
+      style="
+        background: var(--gradient-primary);
+        color: white;
+        text-align: center;
+        padding: 3rem 2rem;
+      "
+    >
+      <div class="container">
+        <h2 style="color: white; margin-bottom: 0.8rem; font-size: 1.5rem">
+          Need Help Choosing?
+        </h2>
+        <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem">
+          Our experts are ready to help you find the perfect solution for your
+          project
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a href="booking.html" class="btn btn-gold">
+            <i class="fas fa-calendar-check"></i> Book Consultation
+          </a>
+          <a href="get-in-touch.html" class="btn btn-secondary">
+            <i class="fas fa-phone"></i> Call Us Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Twin Aluminium Works</h3>
+          <p>
+            Premium aluminium windows, doors, and fabrication services. Quality
+            craftsmanship that stands the test of time.
+          </p>
+          <div class="footer-social">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products-services.html">Products & Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get-in-touch.html">Get In Touch</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="products-services.html">Aluminium Windows</a></li>
+            <li><a href="products-services.html">Aluminium Doors</a></li>
+            <li>
+              <a href="products-services.html">Glass Shower Enclosures</a>
+            </li>
+            <li><a href="products-services.html">Glass Partitions</a></li>
+            <li><a href="products-services.html">Glass Railings</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>Thika Road, Nairobi, Kenya</span>
+            </li>
+            <li><i class="fas fa-phone"></i><span>+254 700 470 467</span></li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><span>conradalumasi90@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i
+              ><span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Twin Aluminium Works. All Rights Reserved.</p>
+        <p>
+          Designed with
+          <i class="fas fa-heart" style="color: var(--gold)"></i> in Kenya
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Details</h3>
+          <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.querySelector('.modal').classList.remove('active')
+            "
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Complete product database with all products
+      var products = {
+        // Windows
+        "sliding-window": {
+          title: "Sliding Windows",
+          category: "Windows",
+          price: "From KSh 15,000",
+          description:
+            "Our premium sliding windows offer smooth operation with excellent weather sealing. Perfect for modern homes and offices, these windows combine functionality with elegant design. Available in multiple configurations to suit your space.",
+          features: [
+            "Smooth sliding mechanism",
+            "Weather-resistant sealing",
+            "Durable aluminium frames",
+            "Easy to clean and maintain",
+            "Energy efficient design",
+            "Multiple finish options",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated / Anodized",
+            glass: "Tempered / Laminated",
+            warranty: "5 Years",
+            delivery: "7-14 Days",
+          },
+          image: "images/product-sliding-window.jpg",
+        },
+        "casement-window": {
+          title: "Casement Windows",
+          category: "Windows",
+          price: "From KSh 12,000",
+          description:
+            "Classic hinged windows that open outward, providing excellent ventilation and unobstructed views. Perfect for traditional and contemporary homes alike.",
+          features: [
+            "Outward opening design",
+            "Superior ventilation",
+            "Tight weather sealing",
+            "Easy operation",
+            "Security locking system",
+            "Custom sizes available",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated / Wood Grain",
+            glass: "Double Glazed",
+            warranty: "5 Years",
+            delivery: "7-14 Days",
+          },
+          image: "images/product-casement-window.jpg",
+        },
+        "bay-window": {
+          title: "Bay Windows",
+          category: "Windows",
+          price: "From KSh 55,000",
+          description:
+            "Expand your living space and add architectural interest with our beautiful bay windows. Perfect for living rooms and bedrooms.",
+          features: [
+            "Extended living space",
+            "Increased natural light",
+            "Panoramic views",
+            "Custom angles",
+            "Weather sealing",
+            "Premium hardware",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated",
+            glass: "Double Glazed",
+            warranty: "5 Years",
+            delivery: "14-28 Days",
+          },
+          image: "images/product-bay-window.jpg",
+        },
+        windows: {
+          title: "Aluminium Windows",
+          category: "Windows",
+          price: "From KSh 12,000",
+          description:
+            "Complete range of aluminium windows for residential and commercial applications. Custom designs available.",
+          features: [
+            "Multiple styles",
+            "Energy efficient",
+            "Weather resistant",
+            "Low maintenance",
+            "Custom sizes",
+            "Various finishes",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated / Anodized",
+            glass: "Various Options",
+            warranty: "5 Years",
+            delivery: "7-14 Days",
+          },
+          image: "images/service-windows.jpg",
+        },
+        // Doors
+        "sliding-door": {
+          title: "Sliding Doors",
+          category: "Doors",
+          price: "From KSh 45,000",
+          description:
+            "Space-saving sliding doors that provide seamless indoor-outdoor connection. Heavy-duty tracks ensure smooth operation for years to come.",
+          features: [
+            "Heavy-duty track system",
+            "Space-saving design",
+            "Large glass panels",
+            "Smooth operation",
+            "Weather sealing",
+            "Security locks",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated",
+            glass: "Tempered Safety Glass",
+            warranty: "5 Years",
+            delivery: "10-21 Days",
+          },
+          image: "images/product-sliding-door.jpg",
+        },
+        "entrance-door": {
+          title: "Entrance Doors",
+          category: "Doors",
+          price: "From KSh 35,000",
+          description:
+            "Make a grand statement with our premium entrance doors. Combining security, style, and durability for your home or business.",
+          features: [
+            "Reinforced frames",
+            "Multi-point locking",
+            "Premium hardware",
+            "Weather resistant",
+            "Custom designs",
+            "Various finishes",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated / Anodized",
+            glass: "Decorative / Clear",
+            warranty: "5 Years",
+            delivery: "10-21 Days",
+          },
+          image: "images/product-entrance-door.jpg",
+        },
+        "folding-door": {
+          title: "Folding Doors",
+          category: "Doors",
+          price: "From KSh 65,000",
+          description:
+            "Bi-fold and multi-fold doors that maximize your opening space. Perfect for patios, restaurants, and modern living spaces.",
+          features: [
+            "Space-maximizing design",
+            "Smooth folding mechanism",
+            "Large opening width",
+            "Weather sealing",
+            "Security locks",
+            "Custom configurations",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated",
+            glass: "Tempered Safety Glass",
+            warranty: "5 Years",
+            delivery: "14-28 Days",
+          },
+          image: "images/product-folding-door.jpg",
+        },
+        "security-door": {
+          title: "Security Doors",
+          category: "Doors",
+          price: "From KSh 40,000",
+          description:
+            "Ultimate protection without compromising on style. Our security doors feature reinforced frames and advanced locking systems.",
+          features: [
+            "Reinforced frames",
+            "Multi-point locking",
+            "Security grilles",
+            "Tamper-resistant",
+            "Weather resistant",
+            "Custom designs",
+          ],
+          specs: {
+            material: "Heavy Gauge Aluminium",
+            finish: "Powder Coated",
+            glass: "Laminated Security Glass",
+            warranty: "5 Years",
+            delivery: "10-21 Days",
+          },
+          image: "images/product-security-door.jpg",
+        },
+        "patio-door": {
+          title: "Patio Doors",
+          category: "Doors",
+          price: "From KSh 50,000",
+          description:
+            "Seamless indoor-outdoor transition with our elegant patio doors. Perfect for entertaining and enjoying your outdoor space.",
+          features: [
+            "Wide opening",
+            "Smooth operation",
+            "Weather sealing",
+            "Security locks",
+            "Energy efficient",
+            "Custom sizes",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated",
+            glass: "Tempered Safety Glass",
+            warranty: "5 Years",
+            delivery: "10-21 Days",
+          },
+          image: "images/product-patio-door.jpg",
+        },
+        doors: {
+          title: "Aluminium Doors",
+          category: "Doors",
+          price: "From KSh 35,000",
+          description:
+            "Complete range of aluminium doors for all applications. Security, style, and durability in one package.",
+          features: [
+            "Multiple styles",
+            "Security features",
+            "Weather resistant",
+            "Low maintenance",
+            "Custom designs",
+            "Various finishes",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Powder Coated / Anodized",
+            glass: "Various Options",
+            warranty: "5 Years",
+            delivery: "10-21 Days",
+          },
+          image: "images/service-doors.jpg",
+        },
+        // Services
+        installation: {
+          title: "Installation Services",
+          category: "Services",
+          price: "Contact for Quote",
+          description:
+            "Professional installation services for all aluminium products. Our expert team ensures perfect fit and finish.",
+          features: [
+            "Experienced installers",
+            "Clean installation",
+            "Weather sealing",
+            "Final adjustments",
+            "Cleanup service",
+            "Warranty included",
+          ],
+          specs: {
+            material: "N/A",
+            finish: "N/A",
+            glass: "N/A",
+            warranty: "2 Years on Installation",
+            delivery: "Scheduled",
+          },
+          image: "images/service-installation.jpg",
+        },
+        fabrication: {
+          title: "Custom Fabrication",
+          category: "Services",
+          price: "Contact for Quote",
+          description:
+            "Bespoke aluminium solutions designed to your exact specifications. We bring your unique vision to life.",
+          features: [
+            "Custom designs",
+            "Special sizes",
+            "Unique finishes",
+            "Architectural features",
+            "Expert craftsmanship",
+            "Quality guarantee",
+          ],
+          specs: {
+            material: "Premium Aluminium",
+            finish: "Custom",
+            glass: "Custom",
+            warranty: "5 Years",
+            delivery: "14-28 Days",
+          },
+          image: "images/service-fabrication.jpg",
+        },
+        commercial: {
+          title: "Commercial Projects",
+          category: "Services",
+          price: "Contact for Quote",
+          description:
+            "Large-scale aluminium solutions for commercial and industrial projects. Complete project management.",
+          features: [
+            "Project management",
+            "Large scale",
+            "Commercial grade",
+            "Timely delivery",
+            "Professional installation",
+            "After-sales support",
+          ],
+          specs: {
+            material: "Commercial Grade Aluminium",
+            finish: "Custom",
+            glass: "Commercial Grade",
+            warranty: "5 Years",
+            delivery: "Project Based",
+          },
+          image: "images/service-commercial.jpg",
+        },
+        repairs: {
+          title: "Repairs & Maintenance",
+          category: "Services",
+          price: "Contact for Quote",
+          description:
+            "Keep your aluminium products in peak condition with our comprehensive repair and maintenance services.",
+          features: [
+            "Quick response",
+            "Expert technicians",
+            "Genuine parts",
+            "Competitive pricing",
+            "Maintenance plans",
+            "Warranty on repairs",
+          ],
+          specs: {
+            material: "N/A",
+            finish: "N/A",
+            glass: "N/A",
+            warranty: "1 Year on Repairs",
+            delivery: "Same Day / Scheduled",
+          },
+          image: "images/service-repairs.jpg",
+        },
+        // Glasswork
+        "glass-shower": {
+          title: "Shower Enclosures",
+          category: "Glasswork",
+          price: "From KSh 35,000",
+          description:
+            "Custom-designed glass shower enclosures that add elegance and functionality to your bathroom. Available in frameless and semi-frameless designs with tempered safety glass.",
+          features: [
+            "Frameless design options",
+            "Tempered safety glass",
+            "Water-tight sealing",
+            "Custom sizes",
+            "Stainless steel hardware",
+            "Easy to clean",
+          ],
+          specs: {
+            material: "Tempered Glass",
+            finish: "Clear / Frosted",
+            thickness: "8mm / 10mm",
+            warranty: "3 Years",
+            delivery: "7-14 Days",
+          },
+          image: "images/glass-shower.jpg",
+        },
+        "glass-partition": {
+          title: "Glass Partitions",
+          category: "Glasswork",
+          price: "From KSh 8,000/m²",
+          description:
+            "Modern glass partitions for offices and commercial spaces. Create open, bright work environments with optional sound insulation.",
+          features: [
+            "Office dividers",
+            "Conference rooms",
+            "Sound insulation options",
+            "Custom finishes",
+            "Easy installation",
+            "Modular design",
+          ],
+          specs: {
+            material: "Tempered Glass",
+            finish: "Clear / Frosted / Tinted",
+            thickness: "10mm / 12mm",
+            warranty: "3 Years",
+            delivery: "7-14 Days",
+          },
+          image: "images/glass-partition.jpg",
+        },
+        "glass-railing": {
+          title: "Glass Railings",
+          category: "Glasswork",
+          price: "From KSh 15,000/m",
+          description:
+            "Sleek glass railings for staircases, balconies, and terraces. Safety meets modern design with stainless steel fittings.",
+          features: [
+            "Stainless steel fittings",
+            "Tempered glass",
+            "Indoor & outdoor",
+            "Custom heights",
+            "Safety certified",
+            "Low maintenance",
+          ],
+          specs: {
+            material: "Tempered Glass + Stainless Steel",
+            finish: "Clear Glass",
+            thickness: "12mm / 15mm",
+            warranty: "5 Years",
+            delivery: "10-21 Days",
+          },
+          image: "images/glass-railing.jpg",
+        },
+        mirrors: {
+          title: "Custom Mirrors",
+          category: "Glasswork",
+          price: "From KSh 5,000",
+          description:
+            "Bespoke mirrors for homes, offices, gyms, and commercial spaces. Available in various shapes, sizes, and finishes.",
+          features: [
+            "Custom sizes",
+            "Decorative edges",
+            "Anti-fog options",
+            "Wall mounting",
+            "Full-length options",
+            "Beveled edges",
+          ],
+          specs: {
+            material: "Silver Mirror Glass",
+            finish: "Clear / Bronze / Grey",
+            thickness: "4mm / 6mm",
+            warranty: "2 Years",
+            delivery: "5-10 Days",
+          },
+          image: "images/glass-mirror.jpg",
+        },
+        "glass-tables": {
+          title: "Glass Tables & Tops",
+          category: "Glasswork",
+          price: "From KSh 10,000",
+          description:
+            "Custom glass table tops for dining tables, coffee tables, office desks, and display cases. Precision cut and polished.",
+          features: [
+            "Custom sizes & shapes",
+            "Tempered safety glass",
+            "Various thicknesses",
+            "Edge polishing",
+            "Hole drilling",
+            "Beveled edges",
+          ],
+          specs: {
+            material: "Tempered Glass",
+            finish: "Clear / Frosted / Tinted",
+            thickness: "8mm / 10mm / 12mm",
+            warranty: "2 Years",
+            delivery: "5-10 Days",
+          },
+          image: "images/glass-table.jpg",
+        },
+        "glass-repair": {
+          title: "Glass Repair & Replacement",
+          category: "Glasswork",
+          price: "Contact for Quote",
+          description:
+            "Quick and professional glass repair and replacement services for all types of glass. Emergency service available.",
+          features: [
+            "Emergency service",
+            "All glass types",
+            "Insurance claims",
+            "Warranty on repairs",
+            "Same-day service",
+            "Free estimates",
+          ],
+          specs: {
+            material: "All Types",
+            finish: "N/A",
+            thickness: "Various",
+            warranty: "1 Year on Repairs",
+            delivery: "Same Day / Scheduled",
+          },
+          image: "images/glass-repair.jpg",
+        },
+      };
+
+      // Load product data based on URL parameter
+      document.addEventListener("DOMContentLoaded", function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var productId = urlParams.get("id") || "sliding-window";
+        var product = products[productId] || products["sliding-window"];
+
+        if (product) {
+          document.getElementById("productTitle").textContent = product.title;
+          document.getElementById("productCategory").textContent =
+            product.category;
+          document.getElementById("productPrice").textContent = product.price;
+          document.getElementById("productDescription").textContent =
+            product.description;
+          document.getElementById("currentProduct").textContent = product.title;
+          document.title = product.title + " | Twin Aluminium Works";
+
+          // Update features
+          var featuresList = document.getElementById("productFeatures");
+          featuresList.innerHTML = "";
+          for (var i = 0; i < product.features.length; i++) {
+            var li = document.createElement("li");
+            li.textContent = product.features[i];
+            featuresList.appendChild(li);
+          }
+
+          // Update specs
+          document.getElementById("specMaterial").textContent =
+            product.specs.material;
+          document.getElementById("specFinish").textContent =
+            product.specs.finish;
+          document.getElementById("specGlass").textContent =
+            product.specs.glass;
+          document.getElementById("specWarranty").textContent =
+            product.specs.warranty;
+          document.getElementById("specDelivery").textContent =
+            product.specs.delivery;
+
+          // Update main image
+          var mainImage = document.getElementById("mainProductImage");
+          mainImage.src = product.image;
+          mainImage.alt = product.title;
+
+          // Update thumbnail (single image is enough)
+          var thumbnails = document.querySelectorAll(
+            ".product-detail-thumbnails img",
+          );
+          for (var j = 0; j < thumbnails.length; j++) {
+            thumbnails[j].src = product.image;
+            thumbnails[j].alt = product.title;
+          }
+        }
+      });
+
+      // Change main image on thumbnail click
+      function changeImage(thumbnail) {
+        var mainImage = document.getElementById("mainProductImage");
+        mainImage.src = thumbnail.src;
+
+        // Update active class
+        var activeThumbs = document.querySelectorAll(
+          ".product-detail-thumbnails img",
+        );
+        for (var i = 0; i < activeThumbs.length; i++) {
+          activeThumbs[i].classList.remove("active");
+        }
+        thumbnail.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
